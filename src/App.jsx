@@ -342,35 +342,35 @@ export default function App() {
             </div>
           </a>
 
-          {/* Menu : taille de police réduite sur mobile pour tenir clairement sur UNE SEULE LIGNE */}
-          <div className="flex items-center flex-nowrap whitespace-nowrap gap-0.5 xs:gap-1 sm:gap-3 md:gap-5 text-[10px] xs:text-[11px] sm:text-xs md:text-sm font-medium shrink-0">
+          {/* Menu : responsive, affiché sur mobile comme sur desktop avec un espacement équilibré */}
+          <div className="flex items-center flex-nowrap whitespace-nowrap gap-0.5 sm:gap-2 md:gap-4 text-[9.5px] sm:text-xs md:text-sm font-medium shrink-0">
             <a
               href="#apropos"
-              className="interactive-lift px-1.5 xs:px-2 sm:px-3 py-1 text-ghost/90 hover:text-white hover:bg-aura/20 rounded-full transition-all shrink-0"
+              className="interactive-lift px-1.5 sm:px-3 py-1 text-ghost/90 hover:text-white hover:bg-aura/20 rounded-full transition-all shrink-0"
             >
               À propos
             </a>
             <a
               href="#experience"
-              className="interactive-lift px-1.5 xs:px-2 sm:px-3 py-1 text-ghost/90 hover:text-white hover:bg-aura/20 rounded-full transition-all shrink-0"
+              className="interactive-lift px-1.5 sm:px-3 py-1 text-ghost/90 hover:text-white hover:bg-aura/20 rounded-full transition-all shrink-0"
             >
               Expérience
             </a>
             <a
               href="#competences"
-              className="interactive-lift px-1.5 xs:px-2 sm:px-3 py-1 text-ghost/90 hover:text-white hover:bg-aura/20 rounded-full transition-all hidden lg:inline-block shrink-0"
+              className="interactive-lift px-1.5 sm:px-3 py-1 text-ghost/90 hover:text-white hover:bg-aura/20 rounded-full transition-all shrink-0"
             >
               Compétences
             </a>
             <a
               href="#formation"
-              className="interactive-lift px-1.5 xs:px-2 sm:px-3 py-1 text-ghost/90 hover:text-white hover:bg-aura/20 rounded-full transition-all shrink-0"
+              className="interactive-lift px-1.5 sm:px-3 py-1 text-ghost/90 hover:text-white hover:bg-aura/20 rounded-full transition-all shrink-0"
             >
               Formation
             </a>
             <a
               href="#contact"
-              className="interactive-lift px-1.5 xs:px-2 sm:px-3 py-1 text-ghost/90 hover:text-white hover:bg-aura/20 rounded-full transition-all shrink-0"
+              className="interactive-lift px-1.5 sm:px-3 py-1 text-ghost/90 hover:text-white hover:bg-aura/20 rounded-full transition-all shrink-0"
             >
               Contact
             </a>
@@ -871,8 +871,8 @@ export default function App() {
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
             
-            {/* Colonne Coordonnées & Réseaux réajustée pour un alignement parfait */}
-            <div className="lg:col-span-5 flex flex-col justify-between h-full gap-3 sm:gap-3.5">
+            {/* Colonne Coordonnées & Réseaux — Espacements aérés et responsive */}
+            <div className="lg:col-span-5 flex flex-col justify-between h-full gap-4 sm:gap-5">
               
               {/* Carte Email avec Logo Professionnel */}
               <a
@@ -936,10 +936,10 @@ export default function App() {
                 </div>
               </a>
 
-              {/* Profil Upwork & Entreprises */}
-              <div className="contact-element rounded-2xl sm:rounded-[1.75rem] p-3.5 sm:p-4 bg-void-card/80 border border-aura/25 backdrop-blur-md space-y-2">
-                <div className="flex items-center justify-between pb-1 border-b border-white/5">
-                  <span className="font-mono text-[11px] text-aura uppercase tracking-wider font-semibold">
+              {/* Profil Upwork & Entreprises — intervalle aéré et distinction claire */}
+              <div className="contact-element rounded-2xl sm:rounded-[1.75rem] p-4 sm:p-5 bg-void-card/80 border border-aura/25 backdrop-blur-md space-y-2.5 sm:space-y-3 mt-1 sm:mt-2 lg:mt-0 shadow-glass">
+                <div className="flex items-center justify-between pb-2 border-b border-white/5">
+                  <span className="font-mono text-[11px] sm:text-xs text-aura uppercase tracking-wider font-semibold">
                     Présence & Sociétés
                   </span>
                   <span className="font-mono text-[10px] text-emerald-400">● Vérifié</span>
@@ -962,7 +962,7 @@ export default function App() {
               </div>
 
               {/* Bouton Téléchargement direct CV aligné avec la base du formulaire */}
-              <div className="contact-element pt-0.5">
+              <div className="contact-element pt-1 sm:pt-2 lg:pt-0">
                 <a
                   href="/cv-adiss-yessoufou.pdf"
                   download="CV-Adiss-A-YESSOUFOU.pdf"
@@ -1066,14 +1066,11 @@ export default function App() {
 
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 relative z-10">
           
-          {/* Identité & Mention Vibe Coding */}
+          {/* Identité */}
           <div className="text-center md:text-left">
             <h4 className="font-sans font-bold text-lg text-white">
               Adiss A. YESSOUFOU
             </h4>
-            <p className="font-mono text-xs text-ghost-muted mt-1">
-              Fait avec le <span className="text-aura font-medium">vibe coding</span> • Antigravity 2.0 • 2026
-            </p>
           </div>
 
           {/* Indicateur de disponibilité En Ligne */}
