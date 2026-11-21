@@ -854,110 +854,143 @@ export default function App() {
       {/* =========================================================================
           G. CONTACT — "Le Pont"
       ========================================================================= */}
-      <section id="contact" className="relative scroll-mt-20 sm:scroll-mt-24 py-28 px-4 sm:px-8 border-t border-aura/15 bg-gradient-to-b from-void via-[#100D22] to-[#0A0A14]">
+      <section id="contact" className="relative scroll-mt-20 sm:scroll-mt-24 py-16 sm:py-24 lg:py-28 px-4 sm:px-6 lg:px-8 border-t border-aura/15 bg-gradient-to-b from-void via-[#100D22] to-[#0A0A14]">
         <div className="max-w-5xl mx-auto">
           
-          <div className="text-center max-w-2xl mx-auto mb-16">
+          <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-14 lg:mb-16">
             <span className="font-mono text-xs uppercase tracking-widest text-aura block mb-2">
               // 05. Prise de Contact
             </span>
-            <h2 className="font-serif italic text-4xl sm:text-5xl lg:text-6xl text-white mb-4">
+            <h2 className="font-serif italic text-3xl sm:text-5xl lg:text-6xl text-white mb-3 sm:mb-4">
               Travaillons ensemble
             </h2>
-            <p className="text-ghost-muted text-sm sm:text-base">
+            <p className="text-ghost-muted text-xs sm:text-sm md:text-base leading-relaxed px-2">
               Vous avez un projet e-commerce, un besoin de tenue de comptes sur QuickBooks/Odoo, ou une mission de restructuration financière ? Échangeons dès aujourd'hui.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-stretch">
             
             {/* Colonne Coordonnées & Réseaux — Espacements aérés et responsive */}
             <div className="lg:col-span-5 flex flex-col justify-between h-full gap-4 sm:gap-5">
               
-              {/* Carte Email avec Logo Professionnel */}
-              <a
-                href="mailto:y2anovacom@gmail.com"
-                className="contact-element card-hover-effect flex items-center gap-3.5 p-3.5 sm:p-4 rounded-2xl sm:rounded-[1.75rem] bg-void-card/85 border border-purple-500/30 backdrop-blur-md group hover:border-purple-400 transition-all shadow-glass"
-              >
-                <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-aura/30 to-purple-900/40 border border-aura/40 flex items-center justify-center text-aura-glow group-hover:scale-105 transition-transform shadow-neon shrink-0">
-                  <Mail className="w-5 h-5 text-purple-300" />
-                </div>
-                <div className="min-w-0 flex-1">
-                  <div className="flex items-center gap-2">
-                    <span className="font-mono text-[10px] sm:text-xs text-purple-300 font-semibold tracking-wider uppercase">Email Professionnel</span>
-                    <span className="text-[9px] font-mono text-ghost-muted bg-purple-500/10 px-1.5 py-0.5 rounded-full border border-purple-500/20">Direct</span>
-                  </div>
-                  <strong className="text-white font-medium text-xs sm:text-sm md:text-[15px] group-hover:text-aura-glow transition-colors block truncate mt-0.5">
-                    y2anovacom@gmail.com
-                  </strong>
-                </div>
-              </a>
+              {/* Canaux de contact directs */}
+              <div className="space-y-3 sm:space-y-3.5">
+                <span className="font-mono text-[10px] sm:text-xs text-aura uppercase tracking-wider font-semibold block px-1">
+                  // Canaux directs
+                </span>
 
-              {/* Carte Téléphone Direct avec Logo Appel Dédié */}
-              <a
-                href="tel:+2290167721418"
-                className="contact-element card-hover-effect flex items-center gap-3.5 p-3.5 sm:p-4 rounded-2xl sm:rounded-[1.75rem] bg-void-card/85 border border-cyan-500/30 backdrop-blur-md group hover:border-cyan-400 transition-all shadow-glass"
-              >
-                <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-cyan-500/20 to-blue-900/40 border border-cyan-500/40 flex items-center justify-center text-cyan-300 group-hover:scale-105 transition-transform shadow-[0_0_15px_rgba(6,182,212,0.3)] shrink-0">
-                  <Phone className="w-5 h-5 text-cyan-300" />
-                </div>
-                <div className="min-w-0 flex-1">
-                  <div className="flex items-center gap-2">
-                    <span className="font-mono text-[10px] sm:text-xs text-cyan-300 font-semibold tracking-wider uppercase">Contact Téléphonique</span>
-                    <span className="text-[9px] font-mono text-cyan-300 bg-cyan-500/10 px-1.5 py-0.5 rounded-full border border-cyan-500/20">Ligne Directe</span>
+                {/* Carte Email avec Logo Professionnel */}
+                <a
+                  href="mailto:y2anovacom@gmail.com"
+                  className="contact-element card-hover-effect flex items-center justify-between p-3.5 sm:p-4 rounded-2xl bg-void-card/85 border border-purple-500/30 backdrop-blur-md group hover:border-purple-400 transition-all shadow-glass"
+                >
+                  <div className="flex items-center gap-3 sm:gap-3.5 min-w-0 flex-1">
+                    <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-aura/30 to-purple-900/40 border border-aura/40 flex items-center justify-center text-aura-glow group-hover:scale-105 transition-transform shadow-neon shrink-0">
+                      <Mail className="w-5 h-5 text-purple-300" />
+                    </div>
+                    <div className="min-w-0 flex-1">
+                      <div className="flex items-center gap-2">
+                        <span className="font-mono text-[10px] sm:text-xs text-purple-300 font-semibold tracking-wider uppercase">Email</span>
+                        <span className="text-[9px] font-mono text-ghost-muted bg-purple-500/10 px-1.5 py-0.5 rounded-full border border-purple-500/20 shrink-0">Direct</span>
+                      </div>
+                      <strong className="text-white font-medium text-xs sm:text-sm md:text-[15px] group-hover:text-aura-glow transition-colors block truncate mt-0.5">
+                        y2anovacom@gmail.com
+                      </strong>
+                    </div>
                   </div>
-                  <strong className="text-white font-medium text-xs sm:text-sm md:text-[15px] group-hover:text-cyan-200 transition-colors block mt-0.5">
-                    +229 01 67 72 14 18
-                  </strong>
-                </div>
-              </a>
+                  <ArrowUpRight className="w-4 h-4 text-purple-400/60 group-hover:text-purple-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all shrink-0 ml-2" />
+                </a>
 
-              {/* Carte WhatsApp Business avec Logo Officiel Dédié */}
-              <a
-                href="https://wa.me/2290195052696"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="contact-element card-hover-effect flex items-center gap-3.5 p-3.5 sm:p-4 rounded-2xl sm:rounded-[1.75rem] bg-void-card/85 border border-emerald-500/30 backdrop-blur-md group hover:border-emerald-400 transition-all shadow-glass"
-              >
-                <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-emerald-500/25 to-teal-900/40 border border-emerald-500/40 flex items-center justify-center text-emerald-400 group-hover:scale-105 transition-transform shadow-[0_0_15px_rgba(16,185,129,0.3)] shrink-0">
-                  <WhatsAppIcon className="w-5 h-5 text-emerald-400 fill-current" />
-                </div>
-                <div className="min-w-0 flex-1">
-                  <div className="flex items-center gap-2">
-                    <span className="font-mono text-[10px] sm:text-xs text-emerald-400 font-semibold tracking-wider uppercase">Contact WhatsApp</span>
-                    <span className="text-[9px] font-mono text-emerald-300 bg-emerald-500/15 px-1.5 py-0.5 rounded-full border border-emerald-500/30 flex items-center gap-1">
-                      <span className="w-1 h-1 rounded-full bg-emerald-400 animate-ping" />
-                      En ligne
-                    </span>
+                {/* Carte Téléphone Direct avec Logo Appel Dédié */}
+                <a
+                  href="tel:+2290167721418"
+                  className="contact-element card-hover-effect flex items-center justify-between p-3.5 sm:p-4 rounded-2xl bg-void-card/85 border border-cyan-500/30 backdrop-blur-md group hover:border-cyan-400 transition-all shadow-glass"
+                >
+                  <div className="flex items-center gap-3 sm:gap-3.5 min-w-0 flex-1">
+                    <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-cyan-500/20 to-blue-900/40 border border-cyan-500/40 flex items-center justify-center text-cyan-300 group-hover:scale-105 transition-transform shadow-[0_0_15px_rgba(6,182,212,0.3)] shrink-0">
+                      <Phone className="w-5 h-5 text-cyan-300" />
+                    </div>
+                    <div className="min-w-0 flex-1">
+                      <div className="flex items-center gap-2">
+                        <span className="font-mono text-[10px] sm:text-xs text-cyan-300 font-semibold tracking-wider uppercase">Téléphone</span>
+                        <span className="text-[9px] font-mono text-cyan-300 bg-cyan-500/10 px-1.5 py-0.5 rounded-full border border-cyan-500/20 shrink-0">Ligne Directe</span>
+                      </div>
+                      <strong className="text-white font-medium text-xs sm:text-sm md:text-[15px] group-hover:text-cyan-200 transition-colors block truncate mt-0.5">
+                        +229 01 67 72 14 18
+                      </strong>
+                    </div>
                   </div>
-                  <strong className="text-white font-medium text-xs sm:text-sm md:text-[15px] group-hover:text-emerald-300 transition-colors block mt-0.5">
-                    +229 01 95 05 26 96
-                  </strong>
-                </div>
-              </a>
+                  <ArrowUpRight className="w-4 h-4 text-cyan-400/60 group-hover:text-cyan-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all shrink-0 ml-2" />
+                </a>
+
+                {/* Carte WhatsApp Business avec Logo Officiel Dédié */}
+                <a
+                  href="https://wa.me/2290195052696"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="contact-element card-hover-effect flex items-center justify-between p-3.5 sm:p-4 rounded-2xl bg-void-card/85 border border-emerald-500/30 backdrop-blur-md group hover:border-emerald-400 transition-all shadow-glass"
+                >
+                  <div className="flex items-center gap-3 sm:gap-3.5 min-w-0 flex-1">
+                    <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-emerald-500/25 to-teal-900/40 border border-emerald-500/40 flex items-center justify-center text-emerald-400 group-hover:scale-105 transition-transform shadow-[0_0_15px_rgba(16,185,129,0.3)] shrink-0">
+                      <WhatsAppIcon className="w-5 h-5 text-emerald-400 fill-current" />
+                    </div>
+                    <div className="min-w-0 flex-1">
+                      <div className="flex items-center gap-2">
+                        <span className="font-mono text-[10px] sm:text-xs text-emerald-400 font-semibold tracking-wider uppercase">WhatsApp</span>
+                        <span className="text-[9px] font-mono text-emerald-300 bg-emerald-500/15 px-1.5 py-0.5 rounded-full border border-emerald-500/30 flex items-center gap-1 shrink-0">
+                          <span className="w-1 h-1 rounded-full bg-emerald-400 animate-ping" />
+                          En ligne
+                        </span>
+                      </div>
+                      <strong className="text-white font-medium text-xs sm:text-sm md:text-[15px] group-hover:text-emerald-300 transition-colors block truncate mt-0.5">
+                        +229 01 95 05 26 96
+                      </strong>
+                    </div>
+                  </div>
+                  <ArrowUpRight className="w-4 h-4 text-emerald-400/60 group-hover:text-emerald-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all shrink-0 ml-2" />
+                </a>
+              </div>
 
               {/* Profil Upwork & Entreprises — intervalle aéré et distinction claire */}
-              <div className="contact-element rounded-2xl sm:rounded-[1.75rem] p-4 sm:p-5 bg-void-card/80 border border-aura/25 backdrop-blur-md space-y-2.5 sm:space-y-3 mt-1 sm:mt-2 lg:mt-0 shadow-glass">
-                <div className="flex items-center justify-between pb-2 border-b border-white/5">
-                  <span className="font-mono text-[11px] sm:text-xs text-aura uppercase tracking-wider font-semibold">
-                    Présence & Sociétés
+              <div className="contact-element rounded-2xl sm:rounded-[1.75rem] p-4 sm:p-5 bg-void-card/90 border border-aura/25 backdrop-blur-md space-y-3 mt-2 sm:mt-3 lg:mt-0 shadow-glass">
+                <div className="flex items-center justify-between pb-2.5 border-b border-white/10">
+                  <div className="flex items-center gap-2">
+                    <Building className="w-4 h-4 text-aura" />
+                    <span className="font-mono text-[11px] sm:text-xs text-aura uppercase tracking-wider font-semibold">
+                      Présence & Sociétés
+                    </span>
+                  </div>
+                  <span className="font-mono text-[10px] text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-full border border-emerald-500/20 flex items-center gap-1">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                    Vérifié
                   </span>
-                  <span className="font-mono text-[10px] text-emerald-400">● Vérifié</span>
                 </div>
                 
-                <div className="flex items-center justify-between text-xs text-ghost/90">
-                  <span className="font-medium">Upwork Top-Rated Specialist</span>
-                  <span className="font-mono text-aura text-[11px] font-semibold">100% Succès</span>
-                </div>
-                
-                <div className="flex items-center justify-between text-xs text-ghost/90">
-                  <span>Y2A Global Business Sarl</span>
-                  <span className="font-mono text-ghost-muted text-[11px]">Cotonou, Bénin</span>
-                </div>
+                <div className="space-y-2 text-xs">
+                  <div className="flex items-center justify-between gap-2 p-2 rounded-xl bg-void-surface/60 border border-white/5">
+                    <div className="flex items-center gap-2 truncate">
+                      <Sparkles className="w-3.5 h-3.5 text-aura shrink-0" />
+                      <span className="font-medium text-white truncate">Upwork Top-Rated Specialist</span>
+                    </div>
+                    <span className="font-mono text-aura font-semibold text-[11px] shrink-0 bg-aura/10 px-2 py-0.5 rounded-md border border-aura/20">100% Succès</span>
+                  </div>
+                  
+                  <div className="flex items-center justify-between gap-2 p-2 rounded-xl bg-void-surface/60 border border-white/5">
+                    <div className="flex items-center gap-2 truncate">
+                      <Building className="w-3.5 h-3.5 text-purple-400 shrink-0" />
+                      <span className="text-ghost/90 truncate">Y2A Global Business Sarl</span>
+                    </div>
+                    <span className="font-mono text-ghost-muted text-[11px] shrink-0">Cotonou, Bénin</span>
+                  </div>
 
-                <div className="flex items-center justify-between text-xs text-ghost/90">
-                  <span>Y2A Novacom</span>
-                  <span className="font-mono text-ghost-muted text-[11px]">Commerce & Digital</span>
+                  <div className="flex items-center justify-between gap-2 p-2 rounded-xl bg-void-surface/60 border border-white/5">
+                    <div className="flex items-center gap-2 truncate">
+                      <Globe className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
+                      <span className="text-ghost/90 truncate">Y2A Novacom</span>
+                    </div>
+                    <span className="font-mono text-ghost-muted text-[11px] shrink-0">Commerce & Digital</span>
+                  </div>
                 </div>
               </div>
 
@@ -966,7 +999,7 @@ export default function App() {
                 <a
                   href="/cv-adiss-yessoufou.pdf"
                   download="CV-Adiss-A-YESSOUFOU.pdf"
-                  className="magnetic-btn w-full flex items-center justify-center gap-2.5 bg-gradient-to-r from-aura to-purple-600 hover:from-aura-glow hover:to-purple-500 text-white font-semibold text-xs sm:text-sm md:text-base py-3 sm:py-3.5 rounded-full shadow-neon border border-aura/40 transition-all"
+                  className="magnetic-btn w-full flex items-center justify-center gap-2.5 bg-gradient-to-r from-aura to-purple-600 hover:from-aura-glow hover:to-purple-500 text-white font-semibold text-xs sm:text-sm md:text-base py-3.5 sm:py-3.5 rounded-full shadow-neon border border-aura/40 transition-all"
                 >
                   <Download className="w-4 h-4 text-white" />
                   <span>Télécharger mon CV (PDF)</span>
@@ -979,15 +1012,20 @@ export default function App() {
             <div className="lg:col-span-7 flex flex-col h-full">
               <form
                 onSubmit={handleContactSubmit}
-                className="contact-element rounded-[2.5rem] p-6 sm:p-8 bg-void-card/90 border border-aura/30 backdrop-blur-lg shadow-glass h-full flex flex-col justify-between"
+                className="contact-element rounded-3xl sm:rounded-[2.5rem] p-5 sm:p-8 bg-void-card/90 border border-aura/30 backdrop-blur-lg shadow-glass h-full flex flex-col justify-between"
               >
                 <div>
-                  <h3 className="font-sans font-bold text-xl sm:text-2xl text-white mb-1.5">
-                    Envoyez un message direct
-                  </h3>
-                  <p className="text-xs sm:text-sm text-ghost-muted mb-5">
-                    Remplissez ce formulaire et je vous répondrai dans les 24 heures ouvrées.
-                  </p>
+                  <div className="mb-5 sm:mb-6">
+                    <span className="font-mono text-[10px] sm:text-xs text-aura uppercase tracking-wider font-semibold block mb-1">
+                      // Formulaire express
+                    </span>
+                    <h3 className="font-sans font-bold text-xl sm:text-2xl text-white">
+                      Envoyez un message direct
+                    </h3>
+                    <p className="text-xs sm:text-sm text-ghost-muted mt-1">
+                      Remplissez ce formulaire et je vous répondrai dans les 24 heures ouvrées.
+                    </p>
+                  </div>
 
                   {contactSubmitted && (
                     <div className="mb-4 p-3.5 rounded-2xl bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 text-xs sm:text-sm flex items-center gap-2">
@@ -996,47 +1034,54 @@ export default function App() {
                     </div>
                   )}
 
-                  <div className="space-y-3">
+                  <div className="space-y-3.5 sm:space-y-4">
                     <div>
-                      <label className="font-mono text-xs text-ghost-muted block mb-1">Votre Nom / Entreprise</label>
+                      <label className="font-mono text-[11px] sm:text-xs text-ghost-muted block mb-1">Votre Nom / Entreprise</label>
                       <input
                         type="text"
                         required
                         placeholder="Ex: Sophie Martin — Entreprise Digitale"
-                        className="w-full px-4 py-2.5 rounded-2xl bg-void-surface border border-aura/25 text-white text-sm focus:outline-none focus:border-aura focus:ring-1 focus:ring-aura transition-all"
+                        className="w-full px-4 py-3 sm:py-2.5 rounded-xl sm:rounded-2xl bg-void-surface border border-aura/25 text-white text-base sm:text-sm placeholder:text-ghost-muted/40 focus:outline-none focus:border-aura focus:ring-2 focus:ring-aura/30 transition-all"
                       />
                     </div>
 
                     <div>
-                      <label className="font-mono text-xs text-ghost-muted block mb-1">Votre Email</label>
+                      <label className="font-mono text-[11px] sm:text-xs text-ghost-muted block mb-1">Votre Email</label>
                       <input
                         type="email"
                         required
                         placeholder="sophie@entreprise.com"
-                        className="w-full px-4 py-2.5 rounded-2xl bg-void-surface border border-aura/25 text-white text-sm focus:outline-none focus:border-aura focus:ring-1 focus:ring-aura transition-all"
+                        className="w-full px-4 py-3 sm:py-2.5 rounded-xl sm:rounded-2xl bg-void-surface border border-aura/25 text-white text-base sm:text-sm placeholder:text-ghost-muted/40 focus:outline-none focus:border-aura focus:ring-2 focus:ring-aura/30 transition-all"
                       />
                     </div>
 
                     <div>
-                      <label className="font-mono text-xs text-ghost-muted block mb-1">Sujet de la mission</label>
-                      <select
-                        className="w-full px-4 py-2.5 rounded-2xl bg-void-surface border border-aura/25 text-white text-sm focus:outline-none focus:border-aura focus:ring-1 focus:ring-aura transition-all"
-                      >
-                        <option value="quickbooks">Tenue de comptes & Reporting Cloud (QuickBooks / Xero / Odoo)</option>
-                        <option value="ecommerce">Comptabilité & Réconciliation E-commerce (Shopify, Chariow)</option>
-                        <option value="audit">Bilan, Fiscalité & Audit PME</option>
-                        <option value="web">Création de site Web / Projet Vibe Coding</option>
-                        <option value="autre">Autre mission de conseil personnalisé</option>
-                      </select>
+                      <label className="font-mono text-[11px] sm:text-xs text-ghost-muted block mb-1">Sujet de la mission</label>
+                      <div className="relative">
+                        <select
+                          className="w-full appearance-none px-4 py-3 sm:py-2.5 pr-10 rounded-xl sm:rounded-2xl bg-void-surface border border-aura/25 text-white text-base sm:text-sm focus:outline-none focus:border-aura focus:ring-2 focus:ring-aura/30 transition-all cursor-pointer"
+                        >
+                          <option value="quickbooks" className="bg-[#121222] text-white">Tenue de comptes & Reporting Cloud (QuickBooks / Xero / Odoo)</option>
+                          <option value="ecommerce" className="bg-[#121222] text-white">Comptabilité & Réconciliation E-commerce (Shopify, Chariow)</option>
+                          <option value="audit" className="bg-[#121222] text-white">Bilan, Fiscalité & Audit PME</option>
+                          <option value="web" className="bg-[#121222] text-white">Création de site Web / Projet Vibe Coding</option>
+                          <option value="autre" className="bg-[#121222] text-white">Autre mission de conseil personnalisé</option>
+                        </select>
+                        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3.5 text-aura">
+                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                          </svg>
+                        </div>
+                      </div>
                     </div>
 
                     <div>
-                      <label className="font-mono text-xs text-ghost-muted block mb-1">Votre Message</label>
+                      <label className="font-mono text-[11px] sm:text-xs text-ghost-muted block mb-1">Votre Message</label>
                       <textarea
                         rows={3}
                         required
                         placeholder="Présentez brièvement vos besoins et vos délais..."
-                        className="w-full px-4 py-2.5 rounded-2xl bg-void-surface border border-aura/25 text-white text-sm focus:outline-none focus:border-aura focus:ring-1 focus:ring-aura transition-all"
+                        className="w-full px-4 py-3 sm:py-2.5 rounded-xl sm:rounded-2xl bg-void-surface border border-aura/25 text-white text-base sm:text-sm placeholder:text-ghost-muted/40 focus:outline-none focus:border-aura focus:ring-2 focus:ring-aura/30 transition-all resize-none"
                       />
                     </div>
                   </div>
@@ -1044,7 +1089,7 @@ export default function App() {
 
                 <button
                   type="submit"
-                  className="magnetic-btn w-full flex items-center justify-center gap-2 bg-gradient-to-r from-aura to-purple-500 hover:from-aura-glow hover:to-purple-400 text-white font-semibold text-xs sm:text-sm md:text-base py-3 sm:py-3.5 rounded-full shadow-neon mt-4"
+                  className="magnetic-btn w-full flex items-center justify-center gap-2 bg-gradient-to-r from-aura to-purple-500 hover:from-aura-glow hover:to-purple-400 text-white font-semibold text-sm sm:text-base py-3.5 sm:py-4 rounded-full shadow-neon mt-5"
                 >
                   <Send className="w-4 h-4" />
                   <span>Envoyer le message</span>
